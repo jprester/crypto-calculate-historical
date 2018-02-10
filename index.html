@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' type='text/css' href='css/style.css'>
+    </head>
+    <body>
+        <div id = "app"></div>
+
+        <form action="">
+            <div>
+                <span>If I had invested </span><input type="text" id="cryptoInputvalue"/><span> (enter value in USD) </span>
+            </div>
+            <div>
+                <span> in </span>
+                <select id="cryptoSelectCrypto">
+                </select>
+                <span> (choose cryptocurrency) </span>
+            </div>
+
+            <div>
+                <span> on </span>
+                <select id="cryptoSelectMonth">
+                </select>
+                <select id="cryptoSelectYear">
+                </select>
+                <span> (choose time m/y. Highest price for chosen month will be used) </span>
+            </div>
+            <p>how much money would I have today?</p>
+            <p id="cryptoResult"></p>
+            <button id="calculateCrypto"> Show Me  </button>
+        </form>
+
+        <script src = 'https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js'></script>
+        <script src = 'js/coinsHistoricalData.js'></script>
+        <script src = 'js/coinsCurrentPrices.js'></script>
+        <script src = 'js/constants.js'></script>
+        <script src = 'js/app.js'></script>
+    </body>
+</html>
