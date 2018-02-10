@@ -1,1 +1,4 @@
-.vscode
+.sass-cache/
+/.vscode
+/src/css
+/node_modules/

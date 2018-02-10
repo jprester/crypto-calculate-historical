@@ -204,7 +204,7 @@ const displayResult = (event) => {
 
     let result = calculateCoinsValue(parseInt(cryptoInputvalue.value), currentPrice, historicalValue);
     console.log("display result: " + result);
-    this.cryptoResult.innerHTML = `If you invested ${inputValue} in ${currencyName} on highest point in ${monthNames[month]}, ${year} today you would have ${result} $.`;
+    this.cryptoResult.innerHTML = `If you invested ${inputValue} $ in ${currencyName} on highest point in ${monthNames[month]}, ${year} today you would have ${result} $.`;
     reset();
 }
 
